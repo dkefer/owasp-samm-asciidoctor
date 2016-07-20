@@ -1,51 +1,48 @@
-= OWASP SAMM - QUICK START GUIDE
+= OWASP SAMM: QUICK START GUIDE
+:imagesdir: images
+:data-uri:
+
+SAMM (Software Assurance Maturity Model) is the OWASP framework to help organizations assess, formulate and implement a strategy for software security, which can be integrated into their existing SDLC. 
+SAMM is fit for most contexts: whether your organization is mainly developing, outsourcing or rather focusing on acquiring software, whether you are using a waterfall or an agile method, the same model can be applied.
+This quick start guide walks you through the core steps to execute your SAMM-based secure software practice.
 
 <<<
 
-== OWASP SAMM QUICK START GUIDE
+== BACKGROUND
+Before diving into actionable steps for a quick start, let’s first briefly describe the model itself. 
+SAMM is based around a set of 12 security practices, which are grouped into 4 business functions. 
+Every security practice contains a set of activities, structured into 3 maturity levels (1 - 3). 
+The activities on a lower maturity level are typically easier to execute and require less formalization than the ones on a higher maturity level. 
+The diagram below illustrates this with example activities found under the under “Education and Guidance” security practice (which is part of the Governance business function):
 
-SAMM (Software Assurance Maturity Model) is the OWASP framework to help organizations
-assess, formulate and implement a strategy for software security, which can
-be integrated into their existing SDLC. SAMM is fit for most contexts: whether your
-organization is mainly developing, outsourcing or rather focusing on acquiring software,
-whether you are using a waterfall or an agile method, the same model can be applied.
-This quick start guide walks you through the core steps to execute your SAMM-based
-secure software practice.
+image::background.ai.svg[align="center"]
 
-<<<
+The structure and setup of the SAMM maturity model are made to support:
+* the assessment of the current software assurance posture
+* the definition of the strategy (i.e. the target) that the organization should take
+* the formulation of an implementation roadmap of how to get there 
+* prescriptive advice on how to implement particular activities.
 
-=== BACKGROUND
-Before diving into actionable steps for a quick start, let’s first briefly describe the model itself. SAMM is based around
-a set of 12 security practices, which are grouped into 4 business functions. Every security practice contains a set of
-activities, structured into 3 maturity levels (1 - 3). The activities on a lower maturity level are typically easier to execute
-and require less formalization than the ones on a higher maturity level. The diagram below illustrates this with example
-activities found under the under “Education and Guidance” security practice (which is part of the Governance business
-function):
-
-
-The structure and setup of the SAMM maturity model are made to support (i) the assessment of the current software
-assurance posture, (ii) the definition of the strategy (i.e. the target) that the organization should take, (iii) the formulation
-of an implementation roadmap of how to get there and (iv) prescriptive advice on how to implement particular activities.
-In that sense, the value of SAMM lies in providing a means to know where your organization is on its journey towards
-software assurance, and to understand what is recommended to move to a next level of maturity. Note that SAMM does
-not insist that all organizations achieve maturity level 3 in every category. Indeed, you determine the target maturity
-level for each “Security Practice” that is the best fit for your organization and its needs. SAMM provides a number of
-templates for typical organizations to this end, but you can adapt these as you see fit.
+In that sense, the value of SAMM lies in providing a means to know where your organization is on its journey towards software assurance, and to understand what is recommended to move to a next level of maturity. 
+Note that SAMM does not insist that all organizations achieve maturity level 3 in every category. 
+Indeed, you determine the target maturity level for each “Security Practice” that is the best fit for your organization and its needs. 
+SAMM provides a number of templates for typical organizations to this end, but you can adapt these as you see fit.
 
 <<<
 
-=== HOW TO APPLY?
-The diagram below illustrates the typical approach of using SAMM in an organization, starting with preparation, going
-through assessment, setting the target, planning, implementation to roll-out. SAMM is particularly well suited to support
-continuous improvement, in which case the cycle is executed continuously (typically in periods of 3 to 12 months). Note
-that it is not necessary to always execute all these steps though. SAMM could be used to perform just the assessment,
-or to only define the long-term goals for instance. 
+== HOW TO APPLY?
+The diagram below illustrates the typical approach of using SAMM in an organization, starting with preparation, going through assessment, setting the target, planning, implementation to roll-out. 
+SAMM is particularly well suited to support continuous improvement, in which case the cycle is executed continuously (typically in periods of 3 to 12 months). 
+Note that it is not necessary to always execute all these steps though. 
+SAMM could be used to perform just the assessment, or to only define the long-term goals for instance. 
 
-So how do you go about executing the different steps described above? Well, as they say, the proof of the pudding is in the eating.
-To get started, the following table provides more information for each step in terms of the goal, the different activities to be
-executed and the most important supporting resources. 
+image::how_to_apply.ai.svg[align="center"]
 
-[cols="2,2,3a,4a,3a", options="header"]
+So how do you go about executing the different steps described above? 
+Well, as they say, the proof of the pudding is in the eating.
+To get started, the following table provides more information for each step in terms of the goal, the different activities to be executed and the most important supporting resources. 
+
+[cols="2,2,4a,4a,3a", options="header"]
 |===
 | STEP | PURPOSE | ACTIVITIES | RESOURCES | BEST PRACTISES 
 
@@ -78,19 +75,23 @@ https://www.owasp.org/index.php/OWASP_SAMM_Project
 .SAMM downloads
 https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads
 
-| Pre-screen software development maturity to have realistic expectations
-
-The smaller the scope, the easier the exercise
+| 
+* Pre-screen software development maturity to have realistic expectations
+* The smaller the scope, the easier the exercise
 
 // ASSESS
 | Assess
 | Identify and understand the maturity of your chosen scope in each of the 12 software security practices
 | 
 .Evaluate current practises
-Organize interviews with relevant stakeholders to understand the current state of practices your organization. You could evaluate this yourself if you understand the organization sufficiently well. SAMM provides lightweight and detailed assessments (where the latter is an evidence-based evaluation) – use the detailed one only if you want to have absolute certainty about the scores.
+Organize interviews with relevant stakeholders to understand the current state of practices your organization. 
+You could evaluate this yourself if you understand the organization sufficiently well. 
+SAMM provides lightweight and detailed assessments (where the latter is an evidence-based evaluation) – use the detailed one only if you want to have absolute certainty about the scores.
 
 .Determine maturity level
-Based on the outcome of the previous activity, determine for each security practice the maturity level according to the SAMM maturity scoring system. In a nutshell, when all activities below and within a maturity level have been implemented, this level can be used for the overall score. When extra higher-level activities have been implemented without reaching a full next level, add a “+” to the rating.
+Based on the outcome of the previous activity, determine for each security practice the maturity level according to the SAMM maturity scoring system. 
+In a nutshell, when all activities below and within a maturity level have been implemented, this level can be used for the overall score. 
+When extra higher-level activities have been implemented without reaching a full next level, add a “+” to the rating.
 
 |
 .SAMM Toolbox
@@ -115,10 +116,14 @@ https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads
 | Develop a target score that you can use as a measuring stick to guide you to act on the “most important” activities for your situation
 | 
 .Define the target
-Set or update the target by identifying which activities your organization should implement ideally. Typically this will include more lower-level than higher-level activities. Predefined roadmap templates can be used as a source for inspiration. Ensure that the total set of selected activities makes sense and take into account dependencies between activities.
+Set or update the target by identifying which activities your organization should implement ideally. 
+Typically this will include more lower-level than higher-level activities. 
+Predefined roadmap templates can be used as a source for inspiration. 
+Ensure that the total set of selected activities makes sense and take into account dependencies between activities.
 
 .Estimate overall impact
-Estimate the impact of the chosen target on the organization. Try to express in budgetary arguments.
+Estimate the impact of the chosen target on the organization. 
+Try to express in budgetary arguments.
 
 |
 See the How-To-Guide for predefined templates 
@@ -181,11 +186,10 @@ Measure the adoption and effectiveness of implemented improvements by analyzing 
 * Use team champions to spread new activities throughout the organization
 |===
 
-As part of a quick start effort, the first four phases (preparation, assess, setting the target and defining the plan) can be
-executed by a single person in a limited amount of time (1 to 2 days). Making sure that this is supported in the organiza-
-tion, as well as the implementation and roll-out phases typically require much more time to execute.
+As part of a quick start effort, the first four phases (preparation, assess, setting the target and defining the plan) can be executed by a single person in a limited amount of time (1 to 2 days). 
+Making sure that this is supported in the organization, as well as the implementation and roll-out phases typically require much more time to execute.
 
-=== OWASP RESOURCES
+== OWASP RESOURCES
 The following SAMM resources are referenced in the SAMM Quick Start Guide:
 
 * SAMM wiki: https://www.owasp.org/index.php/OWASP_SAMM_Project
@@ -195,14 +199,21 @@ The following SAMM resources are referenced in the SAMM Quick Start Guide:
 * SAMM project plan template: https://www.owasp.org/index.php/OWASP_SAMM_Project#tab=Downloads
 * OWASP resources: https://www.owasp.org/index.php/Main_Page
 
-To apply SAMM you will find a lot of great resources at OWASP. We have created a SAMM resources collection on the OWASP wiki.
+To apply SAMM you will find a lot of great resources at OWASP. 
+We have created a SAMM resources collection on the OWASP wiki.
 
-Go to https://www.owasp.org/index.php/SAMM-Resources to discover all our SAMM Resource online. This wiki category links OWASP and other resources to SAMM Security practices.
+Go to https://www.owasp.org/index.php/SAMM-Resources to discover all our SAMM Resource online. 
+This wiki category links OWASP and other resources to SAMM Security practices.
 
-=== FINAL NOTES
-The best way to grasp SAMM is to start using it. his document has presented a number of concrete steps and supportive material to execute on. Now it’s your turn. We warmly invite you to spend a day or two on following the first steps, and you will quickly understand and appreciate the added value of the model. Enjoy!
+== FINAL NOTES
+The best way to grasp SAMM is to start using it. 
+This document has presented a number of concrete steps and supportive material to execute on. 
+Now it’s your turn. 
+We warmly invite you to spend a day or two on following the first steps, and you will quickly understand and appreciate the added value of the model. 
+Enjoy!
 
-Suggestions for improvements are very welcome. And if you’re interested, consider to join the mailinglist or become part of the SAMM community.
+Suggestions for improvements are very welcome. 
+And if you’re interested, consider to join the mailinglist or become part of the SAMM community.
 
 Discover SAMM online - https://www.owasp.org/index.php/SAMM
 
