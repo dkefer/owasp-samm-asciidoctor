@@ -69,11 +69,11 @@ Inform people about the initiative and provide them with information to understa
 * QA Testers
 * Managers
 
-.SAMM wiki:
-https://www.owasp.org/index.php/OWASP_SAMM_Project
+SAMM wiki
+//https://www.owasp.org/index.php/OWASP_SAMM_Project
 
-.SAMM downloads
-https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads
+SAMM downloads
+//https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads
 
 | 
 * Pre-screen software development maturity to have realistic expectations
@@ -95,7 +95,7 @@ When extra higher-level activities have been implemented without reaching a full
 
 |
 .SAMM Toolbox
-https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads
+//https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads
 
 .Both of these resources provide you with:
 * Assessment questions
@@ -146,11 +146,11 @@ Choose a realistic change strategy in terms of number and duration of phases. A 
 Distribute the implementation of additional activities over the different roadmap phases, taking into account the effort required to implement them. Try to balance the implementation effort over the different periods, and take dependencies between activities into account.
 
 | 
-.SAMM Resources
-https://www.owasp.org/index.php/SAMM-Resources
+SAMM Resources
+//https://www.owasp.org/index.php/SAMM-Resources
 
-.SAMM project plan template
-https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads 
+SAMM project plan template
+//https://www.owasp.org/index.php/OWASP_SAMM_Project%23tab%3DDownloads 
 
 | 
 * Identify activities that can be completed quickly and successfully early in the project
